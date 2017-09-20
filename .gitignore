@@ -1,0 +1,10 @@
+# Ignore all these extensions
+*.csv
+*.npy
+*.mytags
+*.ptx
+*.kernel*.cl
+*.gz
+
+# Include the table sets
+!tables.tar.gz

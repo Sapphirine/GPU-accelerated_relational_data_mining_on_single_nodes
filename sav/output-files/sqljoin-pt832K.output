@@ -1,0 +1,78 @@
+*** sqljoin.sh: Sat Dec 31 03:40:31 PST 2016 ***
+
+lpt208K-pt208K JOIN
+———————————————————
+Creating mysql table pt208K
+Loading table from pt208K.csv	time: 0.0311 sec, 11696 rows read
+Creating mysql table lpt208K
+Loading table from lpt208K.csv	time: 0.0925 sec, 212992 rows read
+Performing table join		time: 1.1850 sec
+
+lpt416K-pt416K JOIN
+———————————————————
+Creating mysql table pt416K
+Loading table from pt416K.csv	time: 0.0293 sec, 11696 rows read
+Creating mysql table lpt416K
+Loading table from lpt416K.csv	time: 0.1618 sec, 425984 rows read
+Performing table join		time: 2.3996 sec
+
+lpt832K-pt832K JOIN
+———————————————————
+Creating mysql table pt832K
+Loading table from pt832K.csv	time: 0.0140 sec, 11696 rows read
+Creating mysql table lpt832K
+Loading table from lpt832K.csv	time: 0.3059 sec, 851968 rows read
+Performing table join		time: 4.8565 sec
+
+lpt2M-pt2M JOIN
+———————————————
+Creating mysql table pt2M
+Loading table from pt2M.csv	time: 0.0290 sec, 11696 rows read
+Creating mysql table lpt2M
+Loading table from lpt2M.csv	time: 0.6141 sec, 1703936 rows read
+Performing table join		time: 9.7110 sec
+
+lpt3M-pt3M JOIN
+———————————————
+Creating mysql table pt3M
+Loading table from pt3M.csv	time: 0.0134 sec, 11696 rows read
+Creating mysql table lpt3M
+Loading table from lpt3M.csv	time: 1.2175 sec, 3407872 rows read
+Performing table join		time: 19.4757 sec
+
+lpt7M-pt7M JOIN
+———————————————
+Creating mysql table pt7M
+Loading table from pt7M.csv	time: 0.0135 sec, 11696 rows read
+Creating mysql table lpt7M
+Loading table from lpt7M.csv	time: 2.4439 sec, 6815744 rows read
+Performing table join		time: 38.7363 sec
+
+lpt10M-pt10M JOIN
+—————————————————
+Creating mysql table pt10M
+Loading table from pt10M.csv	time: 0.0273 sec, 11696 rows read
+Creating mysql table lpt10M
+Loading table from lpt10M.csv	time: 3.6512 sec, 10223616 rows read
+Performing table join		time: 59.1352 sec
+
+lpt13M-pt13M JOIN
+—————————————————
+Creating mysql table pt13M
+Loading table from pt13M.csv	time: 0.0135 sec, 11696 rows read
+Creating mysql table lpt13M
+Loading table from lpt13M.csv	time: 4.8388 sec, 13631488 rows read
+Performing table join		time: 77.8112 sec
+
+lpt16M-pt16M JOIN
+—————————————————
+Creating mysql table pt16M
+Loading table from pt16M.csv	time: 0.0148 sec, 11696 rows read
+Creating mysql table lpt16M
+Loading table from lpt16M.csv	time: 6.0761 sec, 17039360 rows read
+Performing table join		time: 97.8465 sec
+
+SQL table JOINs done!
+
+MySQL JOIN times (sec): [1.1850 2.3996 4.8565 9.7110 19.4757 38.7363 59.1352 77.8112 97.8465]
+List written to /home/rasbar/dev/coursework/e6893/project/output/sqljoin.tms

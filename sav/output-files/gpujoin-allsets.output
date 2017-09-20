@@ -1,0 +1,164 @@
+** Created: Sat Dec 31 08:24:27 2016 **
+
+*******************************************************************************
+gpujoin.py – Sat Dec 31 08:24:27 2016
+
+OpenCL platform: NVIDIA CUDA (default)
+One PT for all joins: No
+Join sets: All
+Scheduled GPU iterations per set: 1
+
+Table set: 208K
+———————————————
+Reading lpt208K.npy
+212992 rows loaded (0.0112 sec)
+Reading pt208K.npy
+2784 rows loaded (0.0006 sec)
+Reading rt208K.npy
+212992 rows loaded (0.0062 sec)
+
+Begin GPU processing
+Done!
+ GPU (profiling) time: 0.0134 sec
+ total (GPU+Host) time: 0.0166 sec
+ output == reference: True
+
+Table set: 416K
+———————————————
+Reading lpt416K.npy
+425984 rows loaded (0.0123 sec)
+Reading pt416K.npy
+5664 rows loaded (0.0008 sec)
+Reading rt416K.npy
+425984 rows loaded (0.0166 sec)
+
+Begin GPU processing
+Done!
+ GPU (profiling) time: 0.0579 sec
+ total (GPU+Host) time: 0.0644 sec
+ output == reference: True
+
+Table set: 832K
+———————————————
+Reading lpt832K.npy
+851968 rows loaded (0.0232 sec)
+Reading pt832K.npy
+11696 rows loaded (0.0005 sec)
+Reading rt832K.npy
+851968 rows loaded (0.0180 sec)
+
+Begin GPU processing
+Done!
+ GPU (profiling) time: 0.2091 sec
+ total (GPU+Host) time: 0.2185 sec
+ output == reference: True
+
+Table set: 2M
+—————————————
+Reading lpt2M.npy
+1703936 rows loaded (0.0339 sec)
+Reading pt2M.npy
+22832 rows loaded (0.0006 sec)
+Reading rt2M.npy
+1703936 rows loaded (0.0325 sec)
+
+Begin GPU processing
+Done!
+ GPU (profiling) time: 0.7587 sec
+ total (GPU+Host) time: 0.7756 sec
+ output == reference: True
+
+Table set: 3M
+—————————————
+Reading lpt3M.npy
+3407872 rows loaded (0.0661 sec)
+Reading pt3M.npy
+73264 rows loaded (0.0010 sec)
+Reading rt3M.npy
+3407872 rows loaded (0.0638 sec)
+
+Begin GPU processing
+Done!
+ GPU (profiling) time: 4.0066 sec
+ total (GPU+Host) time: 4.0349 sec
+ output == reference: True
+
+Table set: 7M
+—————————————
+Reading lpt7M.npy
+6815744 rows loaded (0.3200 sec)
+Reading pt7M.npy
+158064 rows loaded (0.0031 sec)
+Reading rt7M.npy
+6815744 rows loaded (0.2965 sec)
+
+Begin GPU processing
+Running only once for this tblset
+Done!
+ GPU (profiling) time: 17.3198 sec
+ total (GPU+Host) time: 17.3644 sec
+ output == reference: True
+
+Table set: 10M
+——————————————
+Reading lpt10M.npy
+10223616 rows loaded (0.3059 sec)
+Reading pt10M.npy
+241600 rows loaded (0.0024 sec)
+Reading rt10M.npy
+10223616 rows loaded (0.1969 sec)
+
+Begin GPU processing
+Running only once for this tblset
+Done!
+ GPU (profiling) time: 39.2411 sec
+ total (GPU+Host) time: 39.3039 sec
+ output == reference: True
+
+Table set: 13M
+——————————————
+Reading lpt13M.npy
+13631488 rows loaded (0.2555 sec)
+Reading pt13M.npy
+308784 rows loaded (0.0046 sec)
+Reading rt13M.npy
+13631488 rows loaded (0.2598 sec)
+
+Begin GPU processing
+Running only once for this tblset
+Done!
+ GPU (profiling) time: 1 min 7.8285 sec
+ total (GPU+Host) time: 1 min 7.9273 sec
+ output == reference: True
+
+Table set: 16M
+——————————————
+Reading lpt16M.npy
+17039360 rows loaded (0.3483 sec)
+Reading pt16M.npy
+391456 rows loaded (0.0050 sec)
+Reading rt16M.npy
+17039360 rows loaded (0.6153 sec)
+
+Begin GPU processing
+Running only once for this tblset
+Done!
+ GPU (profiling) time: 1 min 47.1764 sec
+ total (GPU+Host) time: 1 min 47.2935 sec
+ output == reference: True
+
+GPU table join(s) completed with no errors.
+Execution data written to gpujoin.tms & gpujoin-allsets.tms in output directory
+
+Output Summary. All times in sec.
++-----------------------+--------+--------+--------+---------+---------+---------+----------+----------+----------+
+|                       |   208K |   416K |   832K |      2M |      3M |      7M |      10M |      13M |      16M |
++-----------------------+--------+--------+--------+---------+---------+---------+----------+----------+----------+
+|   linkpage table size | 212992 | 425984 | 851968 | 1703936 | 3407872 | 6815744 | 10223616 | 13631488 | 17039360 |
+|       page table size |   2784 |   5664 |  11696 |   22832 |   73264 |  158064 |   241600 |   308784 |   391456 |
+|           device time | 0.0134 | 0.0579 | 0.2091 |  0.7587 |  4.0066 | 17.3198 |  39.2411 |  67.8285 | 107.1764 |
+|            total time | 0.0166 | 0.0644 | 0.2185 |  0.7756 |  4.0349 | 17.3644 |  39.3039 |  67.9273 | 107.2935 |
+| MySQL processing time | 1.1913 | 2.4152 | 4.9375 |  9.9091 | 19.6471 | 39.5496 |  59.8394 |  81.1367 | 101.8362 |
+|          GPU speed-up |  88.9x | 41.71x | 23.61x |  13.06x |    4.9x |   2.28x |    1.52x |     1.2x |    0.95x |
++-----------------------+--------+--------+--------+---------+---------+---------+----------+----------+----------+
+

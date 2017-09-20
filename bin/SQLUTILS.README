@@ -1,0 +1,14 @@
+The utilities sql2txt, sqlfilter, and mwxml2sql were built from source code
+at https://github.com/nforrester/6.834-final-project. To rebuild these
+programs, clone/download the repo and run make in the xmlsqlutils directory.
+
+sql2txt is the only utility used in this project. It converts the SQL wikipedia
+dumps (either in compressed (*.gz) or uncompressed (.sql) form) to
+tab-seperated csv text files. Those output files are then be read into a MySQL
+db with the LOAD DATA INFILE statement, which is about 20 times faster than
+importing the original SQL dumps.
+
+Use -h or --help with any of the above programs for more information.
+
+Rashad Barghouti
+E6893, Fall 2016
